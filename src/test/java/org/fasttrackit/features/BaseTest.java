@@ -15,7 +15,7 @@ public class BaseTest {
     private WebDriver driver;
 
     @Before
-    public void maximise(){
+    public void maximise() {
         driver.manage().window().maximize();
     }
 
@@ -28,4 +28,7 @@ public class BaseTest {
     @Steps
     protected DeleteProductSteps deleteproductsteps;
     @Steps
-    protected SortBySteps sortbysteps;}
+    protected SortBySteps sortbysteps;
+    @Steps
+    protected ChangeLanguageSteps changelanguagesteps;
+}

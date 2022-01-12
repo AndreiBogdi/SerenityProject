@@ -47,6 +47,15 @@ public class HomePage extends PageObject {
     @FindBy(css = "tr.odd > td:nth-child(6) > a:nth-child(1)")
     private WebElementFacade deleteFirstProduct;
 
+    @FindBy(css = "#select-language")
+    private WebElementFacade changeLanguageOption;
+
+    @FindBy(css ="#select-language > option:nth-child(2)")
+    private WebElementFacade languageFrench;
+
+    @FindBy(css ="#select-language > option:nth-child(3)")
+    private WebElementFacade languageGerman;
+
     public void clickAccountLink() {
         clickOn(accountLink);
     }
@@ -77,6 +86,10 @@ public class HomePage extends PageObject {
     public void clickAddToCart2() {clickOn(AddtoCartBtn2);}
 
     public void clickDeleteFromCart() {clickOn(deleteFirstProduct);}
+
+    public void clickChangeLanguageSlider() {clickOn(changeLanguageOption);}
+    public void clickChangeLanguageFrench() {clickOn(languageFrench);}
+    public void clickChangeLanguageGerman() {clickOn(languageGerman);}
 
 
 }
